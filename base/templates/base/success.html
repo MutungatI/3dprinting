@@ -1,0 +1,12 @@
+{% extends 'base/template.html' %}
+{% load static %}
+{% block content %}
+	<div id="box">
+		<img id="succes-icon" src="{% static 'pages/images/shining3d-einscan-pro-all-in-one-pack.jpg' %}">
+		<h4>Thank you for shopping at 3D Printing ${{amount}}!</h4>
+		<p>Your are highly value {{ surname }}! You will receive a receipt to the email you provided shortly :)</p>
+		<hr>
+		<a class="myButton" href="{% url 'product' %}">&#x2190;Back to shopping page</a>
+	</div>
+
+{% endblock content %}

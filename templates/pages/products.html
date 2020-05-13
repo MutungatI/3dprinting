@@ -1,0 +1,92 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+{% block content %}
+       <section id="about">
+    <div class="container">
+        <h1 class="title text-center">Our Products</h1>
+        <div class="row text-center">
+        <div class="col-md-4">
+            <img id="about-img" class="rounded-circle" src="{% static 'pages/images/hopper.png' %}">
+            <h2>Hopper</h2>
+            <b>Price:</b><small class="fa fa-dollar" id="price">100</small><br>
+            <small><a onclick="autoFill()" href="{% url 'index' %}">Purchase link</a></small>
+
+        </div>
+            <div class="col-md-4 about">
+            <img id="about-img" class="rounded-circle" src="{% static 'pages/images/funnel.png' %}">
+            <h2>Funnel</h2>
+            <b>Price:</b><small class="fa fa-dollar " id="price">100</small><br>
+                <small><a onclick="autoFill()" href="{% url 'index' %}">Purchase link</a></small>
+
+            </div>
+            <div class="col-md-4 about">
+            <img  class="rounded-circle" id="about-img" src="{% static 'pages/images/Hophup.png' %}">
+            <h2>Hopup</h2>
+            <b>Price:</b><small class="fa fa-dollar">1200</small><br>
+                <small><a onclick="autoFill()" href="{% url 'index' %}">Purchase link</a></small>
+
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row text-center">
+        <div class="col-md-4">
+            <img id="about-img" class="rounded-circle" src="{% static 'pages/images/Longwall Roof Support .JPG' %}">
+            <h2>Longwall Roof Support</h2>
+            <b>Price:</b><small class="fa fa-dollar">1000</small><br>
+            <small><a onclick="autoFill()" href="{% url 'index' %}">Purchase link</a></small>
+
+        </div>
+            <div class="col-md-4 about">
+            <img id="about-img"  class="rounded-circle" src="{% static 'pages/images/shining3d-einscan-pro-all-in-one-pack.jpg' %}">
+            <h2>shining3d-einscan-pro-all-in-one-pack</h2>
+            <b>Price:</b><small class="fa fa-dollar">1200</small><br>
+                <small><a onclick="autoFill()" href="{% url 'index' %}">Purchase link</a></small>
+
+        </div>
+            <div class="col-md-4 about">
+            <img  class="rounded-circle"  id="about-img" src="{% static 'pages/images/Legends labels on print beds.jpg' %}">
+            <h2>Legends labels on print beds</h2>
+            <b>Price:</b><small class="fa fa-dollar">1000</small><br>
+                <small><a onclick="autoFill()" href="{% url 'index' %}">Purchase link</a></small>
+
+        </div>
+        </div>
+    </div>
+        <div class="container">
+        <div class="row text-center">
+        <div class="col-md-4">
+            <img id="about-img" class="rounded-circle" src="{% static 'pages/images/V-Prodder.png' %}">
+            <h2>V-Prodder</h2>
+            <b>Price:</b><small class="fa fa-dollar">1000</small><br>
+            <small><a onclick="autoFill()" href="{% url 'index' %}">Purchase link</a></small>
+
+        </div>
+            <div class="col-md-4 about">
+            <img id="about-img" class="rounded-circle" src="{% static 'pages/images/einscan-pro-2x-plus-full-pack.jpg' %}">
+            <h2>einscan-pro-2x-plus-full-pack</h2>
+           <b>Price:</b> <small class="fa fa-dollar">2000</small><br>
+                <small><a onclick="autoFill()" href="{% url 'index' %}">Purchase link</a></small>
+
+        </div>
+            <div class="col-md-4 about">
+            <img  class="rounded-circle" id="about-img" src="{% static 'pages/images/Continuous Miner Laser Mounts .jpg' %}">
+            <h2>Continuous Miner Laser Mounts</h2>
+                <b>Price:</b><small class="fa fa-dollar">1400</small><br>
+                <small><a onclick="autoFill()" href="{% url 'index' %}">Purchase link</a></small>
+
+        </div>
+        </div>
+    </div>
+    </section>
+    <div class="text-center">
+        <b><p class="	fa fa-cc-mastercard">Pay With Your MasterCard,Credit or debit card </p></b>
+    </div>
+    <script type="text/javascript">
+           var price= document.getElementById('price').value;
+           var amount= document.getElementById('amount').value;
+    function autoFill() {
+        amount=price
+    }
+    </script>
+{% endblock content %}
